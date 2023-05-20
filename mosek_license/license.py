@@ -20,6 +20,6 @@ def current():
 
 def _url():
     with urlopen(
-        f"https://localhost:8080/licenses/mosek"
+        f"http://localhost:8080/mosek"
     ) as page:
         return page.read().decode("utf-8")
