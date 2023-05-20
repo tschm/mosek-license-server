@@ -2,3 +2,5 @@
 .idea
 
 licenses/mosek
+mosek.py
+
