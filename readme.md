@@ -47,7 +47,7 @@ from mosek_license import license
 # It's important to upsert the license before you import mosek
 license.upsert()
 
-# only know import mosek
+# only now import mosek
 import mosek
 ```
 
