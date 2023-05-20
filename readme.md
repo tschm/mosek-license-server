@@ -26,4 +26,4 @@ As an alternative you can run the script
 
 ```bash
 ./license_server.sh
-'''
+```
