@@ -1,5 +1,9 @@
 # Mosek License Server
 
+[![PyPI version](https://badge.fury.io/py/mosek-license-server.svg)](https://badge.fury.io/py/mosek-license-server)
+[![Apache 2.0 License](https://img.shields.io/badge/License-APACHEv2-brightgreen.svg)](https://github.com/tschm/mosek-license-server/blob/main/LICENSE)
+[![PyPI download month](https://img.shields.io/pypi/dm/mosek-license-server.svg)](https://pypi.python.org/pypi/mosek-license-server/)
+
 Using a [nginx image](https://hub.docker.com/_/nginx/) we expose a Mosek license
 on a server to be accessible from various research machines without sharing the actual
 license file in the underlying repositories.
