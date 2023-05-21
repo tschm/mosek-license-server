@@ -12,6 +12,9 @@ packages = [{include = "mosek_license"}]
 python = ">=3.9"
 urllib3 = "*"
 
+[tool.poetry.group.test.dependencies]
+mosek = "*"
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
