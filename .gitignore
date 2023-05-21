@@ -4,3 +4,4 @@ __pycache__
 .venv
 
 license/mosek
+tests/cqo1.ptf
