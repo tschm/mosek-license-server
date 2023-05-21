@@ -5,6 +5,7 @@ description = "Expose a mosek license via a nginx server"
 authors = ["Thomas Schmelzer <thomas.schmelzer@gmail.com>"]
 license = "Apache 2.0"
 readme = "readme.md"
+repository = "https://github.com/tschm/mosek-license-server"
 packages = [{include = "mosek_license"}]
 
 [tool.poetry.dependencies]
