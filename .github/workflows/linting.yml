@@ -16,3 +16,9 @@ jobs:
         uses: nosborn/github-action-markdown-cli@v3.3.0
         with:
           files: readme.md
+
+
+      - uses: psf/black@stable
+        with:
+          options: "--check --verbose"
+          src: "./mosek_license"
