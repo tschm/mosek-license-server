@@ -22,3 +22,9 @@ jobs:
         with:
           options: "--check --verbose"
           src: "./mosek_license"
+
+
+      - uses: psf/black@stable
+        with:
+          options: "--check --verbose"
+          src: "./tests"
