@@ -12,7 +12,7 @@ This repository serves two purposes. It exposes the server but it is also the ho
 for a little Python package to inject the license into your programs.
 
 We solve a common problem here. Assume $20$ researchers work on $50$ different strategies.
-Using local copies of the same license file is a tedious exercise as 
+Using local copies of the same license file is a tedious exercise as
 he file needs to get updated once a year.
 Rather, each strategy would connect to the server to fetch a license using the mosek_license
 Python package. Once the strategy expires we only need to update the server.
@@ -46,7 +46,7 @@ via
 docker run --name mosek -v $PWD/license:/usr/share/nginx/html:ro -p 8080:80 -d nginx
 ```
 
-The license will now be exposed via http://localhost:8080
+The license will now be exposed via `http://localhost:8080/mosek`
 
 As an alternative you can run the script
 
