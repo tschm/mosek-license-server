@@ -13,17 +13,17 @@ for a little Python package to inject the license into your programs.
 
 We solve a common problem here. Assume $20$ researchers work on $50$ different strategies.
 Using local copies of the same license file is a tedious exercise as 
-he file needs to get updated once a year. 
+he file needs to get updated once a year.
 Rather, each strategy would connect to the server to fetch a license using the mosek_license
 Python package. Once the strategy expires we only need to update the server.
 No change for the strategies is required.
 
 ## License server
 
-### Copy your license file into folder 
+### Copy your license file into folder
 
 Copy the license file you have received (from Mosek) into the license folder.
-Name it `mosek'. 
+Name it `mosek'.
 
 The file should look like
 
