@@ -1,13 +1,15 @@
 from mosek_license import license
+
+# running this before importing mosek.fusion is crucial
+# it may make the linter nervous though
 license.upsert()
 
 from mosek.fusion import *
 
-if __name__ == '__main__':
-    with Model('cqo1') as M:
-
-        x = M.variable('x', 3, Domain.greaterThan(0.0))
-        y = M.variable('y', 3, Domain.unbounded())
+if __name__ == "__main__":
+    with Model("cqo1") as M:
+        x = M.variable("x", 3, Domain.greaterThan(0.0))
+        y = M.variable("y", 3, Domain.unbounded())
 
         # Create the aliases
         #      z1 = [ y[0],x[0],x[1] ]
@@ -34,16 +36,16 @@ if __name__ == '__main__':
 
         # Solve the problem
         M.solve()
-        M.writeTask('cqo1.ptf')
+        M.writeTask("cqo1.ptf")
 
         # Get the linear solution values
         solx = x.level()
         soly = y.level()
-        print('x1,x2,x3 = %s' % str(solx))
-        print('y1,y2,y3 = %s' % str(soly))
+        print("x1,x2,x3 = %s" % str(solx))
+        print("y1,y2,y3 = %s" % str(soly))
 
         # Get conic solution of qc1
         qc1lvl = qc1.level()
         qc1sn = qc1.dual()
-        print('qc1 levels                = %s' % str(qc1lvl))
-        print('qc1 dual conic var levels = %s' % str(qc1sn))
+        print("qc1 levels                = %s" % str(qc1lvl))
+        print("qc1 dual conic var levels = %s" % str(qc1sn))
