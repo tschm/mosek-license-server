@@ -51,7 +51,7 @@ The license will now be exposed via `http://localhost:8080/mosek`
 As an alternative you can run the script
 
 ```bash
-./license_server.sh
+./start_server.sh
 ```
 
 ## The mosek_license module
