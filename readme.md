@@ -23,8 +23,19 @@ No change for the strategies is required.
 ### Copy your license file into folder 
 
 Copy the license file you have received (from Mosek) into the license folder.
-Name it `mosek'.
+Name it `mosek'. 
 
+The file should look like
+
+```bash
+START_LICENSE
+VENDOR MOSEKLM
+# PSN-4183
+FEATURE PTS MOSEKLM 10 31-jan-2024 uncounted ...
+# PSN-4182
+FEATURE PTON MOSEKLM 10 31-jan-2024 uncounted ...
+END_LICENSE
+```
 
 ### Start the nginx server
 
@@ -50,6 +61,7 @@ Install via
 ```bash
 pip install mosek-license-server
 ```
+
 and then
 
 ```python
