@@ -69,7 +69,7 @@ and then
 from mosek_license import license
 
 # It's important to upsert the license before you import mosek
-license.upsert()
+license.upsert(server="http://localhost:8080/mosek")
 
 # only now import mosek
 import mosek
