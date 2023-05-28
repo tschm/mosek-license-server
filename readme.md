@@ -14,7 +14,7 @@ for a little Python package to inject the license into your programs.
 
 We solve a common problem here. Assume $20$ researchers work on $50$ different strategies.
 Using local copies of the same license file is a tedious exercise as
-he file needs to get updated once a year.
+the file needs to get updated once a year.
 Rather, each strategy would connect to the server to fetch a license using the mosek_license
 Python package. Once the strategy expires we only need to update the server.
 No change for the strategies is required.
@@ -23,8 +23,8 @@ No change for the strategies is required.
 
 ### Copy your license file into folder
 
-Copy the license file you have received (from Mosek) into the license folder.
-Name it `mosek'.
+Copy the license file you have received (from Mosek) into the `web` folder.
+Name it `mosek`.
 
 The file should look like
 
@@ -40,11 +40,11 @@ END_LICENSE
 
 ### Start the nginx server
 
-Share the license folder (after you have copied your personal Mosek license into)
+Share the web folder (after you have copied your personal Mosek license into)
 via
 
 ```bash
-docker run --name mosek -v $PWD/license:/usr/share/nginx/html:ro -p 8080:80 -d nginx
+docker run --name mosek -v $PWD/web:/usr/share/nginx/html:ro -p 8080:80 -d nginx
 ```
 
 The license will now be exposed via `http://localhost:8080/mosek`
