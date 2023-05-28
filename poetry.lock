@@ -2,31 +2,31 @@
 
 [[package]]
 name = "mosek"
-version = "10.0.45"
+version = "10.0.46"
 description = "Python API for Mosek"
 category = "dev"
 optional = false
 python-versions = "*"
 files = [
-    {file = "Mosek-10.0.45-cp310-cp310-macosx_10_15_x86_64.whl", hash = "sha256:fa01b231165c9fd1f7320ebbe020a360e1a64b7d03c0c9b1fea47a3584a3f22e"},
-    {file = "Mosek-10.0.45-cp310-cp310-macosx_11_0_arm64.whl", hash = "sha256:13a821260b6fe97fd6b927649b9ba00b4c109e9e4bab389baa1b2c90f617b3af"},
-    {file = "Mosek-10.0.45-cp310-cp310-manylinux2014_aarch64.whl", hash = "sha256:8b5bbbce0201f42f97d68e5da3e06bde520af07aa4eccfb47c79dbf4faadc2ae"},
-    {file = "Mosek-10.0.45-cp310-cp310-manylinux2014_x86_64.whl", hash = "sha256:33c93fd189040b785ba22c6865b72e7a0a94a19187f03a2afd70661aa32f438e"},
-    {file = "Mosek-10.0.45-cp310-cp310-win_amd64.whl", hash = "sha256:3a7128ea70d4e3cd6767d7b7db794c0e5368795e78200c8d6111bbee5ce1d2b6"},
-    {file = "Mosek-10.0.45-cp37-cp37m-macosx_10_15_x86_64.whl", hash = "sha256:6dddbb989c822a89d669ccf5a55a62854f550fc5744433576c7d7682c0048422"},
-    {file = "Mosek-10.0.45-cp37-cp37m-manylinux2014_aarch64.whl", hash = "sha256:509b91644b0dfa242c212d690085efa573193b2a631a6b0cc4ed803d3949e426"},
-    {file = "Mosek-10.0.45-cp37-cp37m-manylinux2014_x86_64.whl", hash = "sha256:6222d6b2c5371a97adfd8d6653ed04808c400cc6670d8a462fff982a842519a9"},
-    {file = "Mosek-10.0.45-cp37-cp37m-win_amd64.whl", hash = "sha256:ce6a12357a758e1ef9049011415a17c6f14319aba30e6b0e412d0ce4ccb9d8f9"},
-    {file = "Mosek-10.0.45-cp38-cp38-macosx_10_15_x86_64.whl", hash = "sha256:7d69183627cfcfa4145ad25289355727ea1cf7ebab79688dc038942ef0d48683"},
-    {file = "Mosek-10.0.45-cp38-cp38-macosx_11_0_arm64.whl", hash = "sha256:2ca603fd3f1f65aff5f3224546ff6d7d390a44ca58c83624c651f378cb3e6419"},
-    {file = "Mosek-10.0.45-cp38-cp38-manylinux2014_aarch64.whl", hash = "sha256:b3723e6598811955cddcfbc9de99f643b226d0ee8347b1f60eff4ddc576c22c4"},
-    {file = "Mosek-10.0.45-cp38-cp38-manylinux2014_x86_64.whl", hash = "sha256:092d6850fb371a1ce82aa82fe6b6b832ee918747ff7e9396971b154539625655"},
-    {file = "Mosek-10.0.45-cp38-cp38-win_amd64.whl", hash = "sha256:e1506ce63961395aad43a507e81368bbe92934eab1b1854cd7f175e30cdeb142"},
-    {file = "Mosek-10.0.45-cp39-cp39-macosx_10_15_x86_64.whl", hash = "sha256:6992d47dd881fc6175078de8ca2dfecbb14d7220c082add55146880a4d4bc621"},
-    {file = "Mosek-10.0.45-cp39-cp39-macosx_11_0_arm64.whl", hash = "sha256:edd6540c452f0a3ce7458a94b3bbef08fbcddb4022701c0037fa234de25f5b53"},
-    {file = "Mosek-10.0.45-cp39-cp39-manylinux2014_aarch64.whl", hash = "sha256:d237ada87e50c658f0317a16cab90a00c31d795a3150f699401be0bac60844ea"},
-    {file = "Mosek-10.0.45-cp39-cp39-manylinux2014_x86_64.whl", hash = "sha256:7dbe29f892e8b798071db12f9123f824e47a8d88cfe233529d4a4c9eeab3de19"},
-    {file = "Mosek-10.0.45-cp39-cp39-win_amd64.whl", hash = "sha256:af712d43b349f46d0bbdf4294d0dddac208358cf841d2cf320601086f9b6b75f"},
+    {file = "Mosek-10.0.46-cp310-cp310-macosx_10_15_x86_64.whl", hash = "sha256:64c67fd828353ba17a974f6afb8789851b5457426c0aab364dfd2b64b7348b53"},
+    {file = "Mosek-10.0.46-cp310-cp310-macosx_11_0_arm64.whl", hash = "sha256:71dea2fb6e1a4e7df75a74dc7a5c7abcf9635f263391b505494015dc86b656a1"},
+    {file = "Mosek-10.0.46-cp310-cp310-manylinux2014_aarch64.whl", hash = "sha256:6d5fdd730ed712efb2edb956cd8f365f938d77561d6b6d1f2e70c1fc4d62853a"},
+    {file = "Mosek-10.0.46-cp310-cp310-manylinux2014_x86_64.whl", hash = "sha256:4fb126628781af2293c1961b1cc4d0e67154c39c90d8a9634a907124cc0da2c4"},
+    {file = "Mosek-10.0.46-cp310-cp310-win_amd64.whl", hash = "sha256:3f5406c994919b1d5d9b4bfc757adc48248d751cf839b8fe66afe6a07e66c3a3"},
+    {file = "Mosek-10.0.46-cp37-cp37m-macosx_10_15_x86_64.whl", hash = "sha256:ad8e75209ac4d0c87e0e866b7e581259a8f3e4b17a4e92cd48107172760188c4"},
+    {file = "Mosek-10.0.46-cp37-cp37m-manylinux2014_aarch64.whl", hash = "sha256:47c20ce18ef0e15d84756c4eea84f4c03e294d207401cb27046765f713cb48ae"},
+    {file = "Mosek-10.0.46-cp37-cp37m-manylinux2014_x86_64.whl", hash = "sha256:4593814484cb336907926f7f8705d7a5a3b24c1929446d91623b81f089270ab6"},
+    {file = "Mosek-10.0.46-cp37-cp37m-win_amd64.whl", hash = "sha256:ee9de1efc67f8be8ebbe23baadf058bc6afe33490b42e60b6c28dc7fae042570"},
+    {file = "Mosek-10.0.46-cp38-cp38-macosx_10_15_x86_64.whl", hash = "sha256:cf8c1aac6ea0de68957141844851db54421892313e8f2759f60b48bc151f2a0d"},
+    {file = "Mosek-10.0.46-cp38-cp38-macosx_11_0_arm64.whl", hash = "sha256:e4ce6b61b4b838090fefc6bc25952102e0bd00a543b83e35a91464345af89bde"},
+    {file = "Mosek-10.0.46-cp38-cp38-manylinux2014_aarch64.whl", hash = "sha256:a3ac0923165d814ba4cafcad2fb6753a2be9ec2db39cb595e7b05b18dc52855c"},
+    {file = "Mosek-10.0.46-cp38-cp38-manylinux2014_x86_64.whl", hash = "sha256:4d9d657c0886394350043bcbe8ae239b038023c25f6219a9144af9492a3b8614"},
+    {file = "Mosek-10.0.46-cp38-cp38-win_amd64.whl", hash = "sha256:5879734a728485a2cb50b61099fcd7bf96c8b80953cf9ae4404aa25db884f81d"},
+    {file = "Mosek-10.0.46-cp39-cp39-macosx_10_15_x86_64.whl", hash = "sha256:a79e7689f454bafca0322002579d5801f51c08486656535ffecc1acf9faa3e0d"},
+    {file = "Mosek-10.0.46-cp39-cp39-macosx_11_0_arm64.whl", hash = "sha256:e11e26145517a9de3ecc56f8fc28ec0b505a348009906209c82546758f0aab23"},
+    {file = "Mosek-10.0.46-cp39-cp39-manylinux2014_aarch64.whl", hash = "sha256:094ee305ce7d7c7536a7b73e78a2cd81a1fc17aa266a39b5369e927d3a6d99db"},
+    {file = "Mosek-10.0.46-cp39-cp39-manylinux2014_x86_64.whl", hash = "sha256:27a33ac3092d79079bf1ca49985fd4ad5bae5cdf42aa0b3c88e3cbe099602486"},
+    {file = "Mosek-10.0.46-cp39-cp39-win_amd64.whl", hash = "sha256:68529aec46df699fb0da1510c62e1c484da3416fb86084e2e7be4540da460e80"},
 ]
 
 [[package]]
@@ -67,25 +67,7 @@ files = [
     {file = "numpy-1.24.3.tar.gz", hash = "sha256:ab344f1bf21f140adab8e47fdbc7c35a477dc01408791f8ba00d018dd0bc5155"},
 ]
 
-[[package]]
-name = "urllib3"
-version = "2.0.2"
-description = "HTTP library with thread-safe connection pooling, file post, and more."
-category = "main"
-optional = false
-python-versions = ">=3.7"
-files = [
-    {file = "urllib3-2.0.2-py3-none-any.whl", hash = "sha256:d055c2f9d38dc53c808f6fdc8eab7360b6fdbbde02340ed25cfbcd817c62469e"},
-    {file = "urllib3-2.0.2.tar.gz", hash = "sha256:61717a1095d7e155cdb737ac7bb2f4324a858a1e2e6466f6d03ff630ca68d3cc"},
-]
-
-[package.extras]
-brotli = ["brotli (>=1.0.9)", "brotlicffi (>=0.8.0)"]
-secure = ["certifi", "cryptography (>=1.9)", "idna (>=2.0.0)", "pyopenssl (>=17.1.0)", "urllib3-secure-extra"]
-socks = ["pysocks (>=1.5.6,!=1.5.7,<2.0)"]
-zstd = ["zstandard (>=0.18.0)"]
-
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.9"
-content-hash = "eb7dbe8700dfa56c35c8e0e245c63ea21ac7486c53c5e83ccdc0ecf04c771705"
+content-hash = "77a2896ef1ea2e46d33126525a54fb745c6f14e16f768dcdb6e22fd7bc423b23"
