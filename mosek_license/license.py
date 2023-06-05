@@ -1,6 +1,8 @@
+# -*- coding: utf-8 -*-
 """
 Mosek license
 """
+from __future__ import annotations
 
 import os
 from urllib.request import urlopen

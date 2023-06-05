@@ -1,3 +1,6 @@
+# -*- coding: utf-8 -*-
+from __future__ import annotations
+
 from mosek_license import license
 
 # running this before importing mosek.fusion is crucial

@@ -26,7 +26,7 @@ jobs:
           virtualenvs-in-project: true
           virtualenvs-path: .venv
           installer-parallel: true
-          
+
       - name: Change version in pyproject.toml
         run: |
             poetry version ${{  github.ref_name }}
