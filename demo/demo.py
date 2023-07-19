@@ -4,6 +4,7 @@ from __future__ import annotations
 import mosek.fusion as fusion
 
 from mosek_license import license
+
 license.upsert()
 
 
