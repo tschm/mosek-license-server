@@ -17,7 +17,11 @@ def upsert(server=None):
 
 def current():
     """Get the current license"""
-    return os.environ.get(ENV_VARNAME)
+    try:
+        return os.environ[ENV_VARNAME]
+    except KeyError:
+        raise KeyError(
+            "The environment variable MOSEKLM_LICENSE_FILE is not set. Please use the upsert function to set it.")
 
 
 def _url(server=None):

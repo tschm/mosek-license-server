@@ -4,4 +4,4 @@ __pycache__
 .venv
 .ruff_cache
 
-tests/cqo1.ptf
+demo/cqo1.ptf

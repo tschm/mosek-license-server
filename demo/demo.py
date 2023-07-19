@@ -1,16 +1,17 @@
 # -*- coding: utf-8 -*-
 from __future__ import annotations
 
-from mosek_license import license
+import mosek.fusion as fusion
 
-# running this before importing mosek.fusion is crucial
-# it may make the linter nervous though
+from mosek_license import license
 license.upsert()
 
-import mosek.fusion as fusion
 
 if __name__ == "__main__":
     with fusion.Model("cqo1") as M:
+        # this is optional, just to be safe...
+        M.putlicensepath(license.current())
+
         x = M.variable("x", 3, fusion.Domain.greaterThan(0.0))
         y = M.variable("y", 3, fusion.Domain.unbounded())
 
