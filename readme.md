@@ -66,11 +66,23 @@ pip install mosek-license-server
 and then
 
 ```python
+import mosek
+
 from mosek_license import license
 
-# It's important to upsert the license before you import mosek
 license.upsert(server="http://localhost:8080/mosek")
-
-# only now import mosek
-import mosek
 ```
+
+## Problems
+
+In case you experience problems please check:
+
+- the license file is named `mosek`
+- the license file starts with `START_LICENSE`
+- the license file ends with `END_LICENSE`
+- the dates in the license file are still in the future
+- the server is running, e.g. docker ps -all (and check for mosek)
+- you can download a license file from the server, e.g. curl <http://localhost:8080/mosek>
+- you can run the demo in the demo folder
+
+Still lost? Please open an issue.

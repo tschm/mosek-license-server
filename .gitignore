@@ -2,6 +2,6 @@
 .idea
 __pycache__
 .venv
+.ruff_cache
 
-web/mosek
-tests/cqo1.ptf
+demo/cqo1.ptf
