@@ -25,6 +25,9 @@ black = "23.3.0"
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
+[tool.poetry.scripts]
+demo = "demo.demo:main"
+
 [tool.ruff]
 select = ["E", "F", "I"]
 line-length = 100
