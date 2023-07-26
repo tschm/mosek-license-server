@@ -7,6 +7,7 @@ from mosek_license import license
 
 license.upsert()
 
+
 def main():
     with fusion.Model("cqo1") as M:
         # this is optional, just to be safe...
@@ -35,8 +36,7 @@ def main():
         #                 z1[0] >= sqrt(z1[1]^2 + z1[2]^2)
         #  and  2.0 z2[0] z2[1] >= z2[2]^2
         qc1 = M.constraint("qc1", z1, fusion.Domain.inQCone())
-        qc2 = M.constraint("qc2", z2, fusion.Domain.inRotatedQCone())
-
+        M.constraint("qc2", z2, fusion.Domain.inRotatedQCone())
 
         # Set the objective function to (y[0] + y[1] + y[2])
         M.objective("obj", fusion.ObjectiveSense.Minimize, fusion.Expr.sum(y))
@@ -56,6 +56,6 @@ def main():
         print("qc1 levels                = %s" % str(qc1lvl))
         print("qc1 dual conic var levels = %s" % str(qc1sn))
 
+
 if __name__ == "__main__":
     main()
-
