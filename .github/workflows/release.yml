@@ -78,4 +78,5 @@ jobs:
         shell: bash
         run: |
            ls -all
+           ls -all dist
            poetry publish -u __token__ -p '${{ steps.mint.outputs.api-token }}'
