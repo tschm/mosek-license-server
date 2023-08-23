@@ -68,7 +68,7 @@ jobs:
       - uses: actions/download-artifact@v3
         with:
           name: dist
-          path: .dist
+          path: dist
 
       - name: Mint token
         id: mint
@@ -77,4 +77,5 @@ jobs:
       - name: Publish the package with poetry
         shell: bash
         run: |
+           ls -all
            poetry publish -u __token__ -p '${{ steps.mint.outputs.api-token }}'
