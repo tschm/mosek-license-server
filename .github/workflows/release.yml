@@ -12,22 +12,22 @@ jobs:
 
       # step used to set up python, install poetry and to create
       # to virtual environment described in poetry.lock
-      - uses: cvxgrp/.github/actions/setup-environment@main
+      - uses: cvxgrp/.github/actions/build@main
 
       # change the version in pyproject.toml and build the package
-      - name: Change version in pyproject.toml
-        shell: bash
-        run: |
-           poetry version ${{  github.ref_name }}
-           poetry build
+      #- name: Change version in pyproject.toml
+      #  shell: bash
+      #  run: |
+      #     poetry version ${{  github.ref_name }}
+      #     poetry build
 
       # Archive the dist folder
-      - name: Archive sphinx documentation
-        uses: actions/upload-artifact@v3
-        with:
-          name: dist
-          path: dist
-          retention-days: 1
+      #- name: Archive sphinx documentation
+      #  uses: actions/upload-artifact@v3
+      #  with:
+      #    name: dist
+      #    path: dist
+      #    retention-days: 1
 
   deploy:
     runs-on: ubuntu-latest
