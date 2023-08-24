@@ -64,7 +64,7 @@ jobs:
     #  - name: Install twine
     #    id: twine
     #    run : |
-          
+
       #- uses: cvxgrp/.github/actions/setup-environment@main
       #  with:
       #    python-version: "${{ inputs.python-version || '3.10' }}"
@@ -83,9 +83,9 @@ jobs:
         id: mint
         uses: tschm/token-mint-action@v1.0.2
 
-      - name: Publish the package 
+      - name: Publish the package
         shell: bash
         run: |
            pip install twine
-           twine upload --verbose -u __token__ -p '${{ steps.mint.outputs.api-token }}'           
+           twine upload --verbose -u __token__ -p '${{ steps.mint.outputs.api-token }}' dist
            # poetry publish -u __token__ -p '${{ steps.mint.outputs.api-token }}'
