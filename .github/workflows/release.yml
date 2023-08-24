@@ -74,10 +74,10 @@ jobs:
       #  run: |
       #     poetry version ${{  github.ref_name }}
 
-      #- uses: actions/download-artifact@v3
-      #  with:
-      #    name: dist
-      #    path: dist
+      - uses: actions/download-artifact@v3
+        with:
+          name: dist
+          path: dist
 
       - name: Mint token
         id: mint
@@ -86,6 +86,7 @@ jobs:
       - name: Publish the package
         shell: bash
         run: |
-           pip install twine
+           ls -all dist
+	   pip install twine
            twine upload --verbose -u __token__ -p '${{ steps.mint.outputs.api-token }}' dist
            # poetry publish -u __token__ -p '${{ steps.mint.outputs.api-token }}'
