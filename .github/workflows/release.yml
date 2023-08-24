@@ -87,6 +87,5 @@ jobs:
         shell: bash
         run: |
            ls -all dist
-	   pip install twine
+           pip install twine
            twine upload --verbose -u __token__ -p '${{ steps.mint.outputs.api-token }}' dist
-           # poetry publish -u __token__ -p '${{ steps.mint.outputs.api-token }}'
