@@ -1,24 +1,3 @@
-#name: Upload Python Package
-#
-#on:
-#  release:
-#    types: [published]
-#
-#jobs:
-#  deploy:
-#    runs-on: ubuntu-latest
-#    environment: release
-#
-#    permissions:
-#      # This permission is required for trusted publishing.
-#      id-token: write
-#      contents: read
-#
-#    steps:
-#      - uses: actions/checkout@v3
-#      - uses: cvxgrp/.github/actions/release@main
-
-
 name: Upload Python Package
 
 on:
@@ -61,18 +40,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-python@v3
-    #  - name: Install twine
-    #    id: twine
-    #    run : |
-
-      #- uses: cvxgrp/.github/actions/setup-environment@main
-      #  with:
-      #    python-version: "${{ inputs.python-version || '3.10' }}"
-
-      #- name: Change version in pyproject.toml
-      #  shell: bash
-      #  run: |
-      #     poetry version ${{  github.ref_name }}
 
       - uses: actions/download-artifact@v3
         with:
