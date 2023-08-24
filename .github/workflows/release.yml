@@ -88,4 +88,4 @@ jobs:
         run: |
            ls -all dist
            pip install twine
-           twine upload --verbose -u __token__ -p '${{ steps.mint.outputs.api-token }}' dist
+           twine upload --verbose -u __token__ -p '${{ steps.mint.outputs.api-token }}' dist/*
