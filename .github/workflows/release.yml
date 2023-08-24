@@ -46,7 +46,7 @@ jobs:
       - uses: actions/download-artifact@v3
         with:
           name: dist
-          #path: dist
+          path: dist
 
       # Generate the token
       - name: Mint token
@@ -57,6 +57,5 @@ jobs:
       - name: Publish the package
         shell: bash
         run: |
-           ls -l dist
            pip install twine
            twine upload --verbose -u __token__ -p '${{ steps.mint.outputs.api-token }}' dist/*
