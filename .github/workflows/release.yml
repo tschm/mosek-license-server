@@ -60,26 +60,32 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
+      - uses: actions/setup-python@v3
+    #  - name: Install twine
+    #    id: twine
+    #    run : |
+          
+      #- uses: cvxgrp/.github/actions/setup-environment@main
+      #  with:
+      #    python-version: "${{ inputs.python-version || '3.10' }}"
 
-      - uses: cvxgrp/.github/actions/setup-environment@main
-        with:
-          python-version: "${{ inputs.python-version || '3.10' }}"
+      #- name: Change version in pyproject.toml
+      #  shell: bash
+      #  run: |
+      #     poetry version ${{  github.ref_name }}
 
-      - name: Change version in pyproject.toml
-        shell: bash
-        run: |
-           poetry version ${{  github.ref_name }}
-
-      - uses: actions/download-artifact@v3
-        with:
-          name: dist
-          path: dist
+      #- uses: actions/download-artifact@v3
+      #  with:
+      #    name: dist
+      #    path: dist
 
       - name: Mint token
         id: mint
         uses: tschm/token-mint-action@v1.0.2
 
-      - name: Publish the package with poetry
+      - name: Publish the package 
         shell: bash
         run: |
-           poetry publish -u __token__ -p '${{ steps.mint.outputs.api-token }}'
+           pip install twine
+           twine upload --verbose -u __token__ -p '${{ steps.mint.outputs.api-token }}'           
+           # poetry publish -u __token__ -p '${{ steps.mint.outputs.api-token }}'
