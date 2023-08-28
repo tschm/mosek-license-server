@@ -85,3 +85,15 @@ In case you experience problems please check:
 - you can run the demo in the demo folder
 
 Still lost? Please open an issue.
+
+## Poetry
+
+We assume you share already the love for [Poetry](https://python-poetry.org).
+Once you have installed poetry you can perform
+
+```bash
+make install
+```
+
+to replicate the virtual environment we have defined in [pyproject.toml](pyproject.toml)
+and locked in [poetry.lock](poetry.lock).
