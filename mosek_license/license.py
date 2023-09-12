@@ -23,7 +23,7 @@ ENV_VARNAME = "MOSEKLM_LICENSE_FILE"
 
 
 def upsert(server=None):
-    """Insert or update an environment varible MOSEKLM_LICENSE_FILE"""
+    """Insert or update an environment variable MOSEKLM_LICENSE_FILE"""
     os.environ[ENV_VARNAME] = _url(server=server)
 
 
