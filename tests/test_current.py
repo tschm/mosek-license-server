@@ -1,9 +1,8 @@
-import os
 from unittest.mock import MagicMock, patch
 
 import pytest
 
-from mosek_license.license import current, upsert
+from mosek_license.license import _url, current
 
 
 def test_current():
@@ -20,5 +19,6 @@ def test_cm(mock_urlopen):
     cm.__enter__.return_value = cm
     mock_urlopen.return_value = cm
 
-    upsert(server="http://localhost:8080/mosek")
-    assert os.environ["MOSEKLM_LICENSE_FILE"] == "maffay"
+    assert _url(server="http://localhost:8080/mosek") == "maffay"
+
+    # assert os.environ["MOSEKLM_LICENSE_FILE"] == "maffay"
