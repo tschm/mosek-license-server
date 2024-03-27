@@ -42,11 +42,3 @@ def _url(server=None):
     server = server or "http://localhost:8080/mosek"
     with urllib.request.urlopen(server) as page:
         return page.read().decode("utf-8")
-
-    # Mock the urlopen function
-    # def mock_urlopen(server=None):
-    #     return b"mocked"
-
-    # def test_upsert():
-    #     upsert(server="http://localhost:8080/mosek")
-    #     assert current() == "mocked"  # pragma: no cover  # noqa: F821
