@@ -9,11 +9,11 @@ repository = "https://github.com/tschm/mosek-license-server"
 packages = [{include = "mosek_license"}]
 
 [tool.poetry.dependencies]
-python = ">=3.9"
+python = ">=3.9,<3.13"
 
 [tool.poetry.group.test.dependencies]
 numpy = "*"
-mosek = "*"
+mosek = "~10.1.28"
 pytest = "*"
 pytest-cov = "*"
 pre-commit = "*"
