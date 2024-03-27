@@ -157,31 +157,20 @@ files = [
 
 [[package]]
 name = "mosek"
-version = "10.0.47"
+version = "10.1.28"
 description = "Python API for Mosek"
 optional = false
-python-versions = "*"
+python-versions = "<3.13,>=3.7"
 files = [
-    {file = "Mosek-10.0.47-cp310-cp310-macosx_10_15_x86_64.whl", hash = "sha256:6fb49c50fea12ebc0e48ab1d8ce80d0e0fe87369795c9f73312c73d253438f66"},
-    {file = "Mosek-10.0.47-cp310-cp310-macosx_11_0_arm64.whl", hash = "sha256:73f91c797966f153dc494ebf8e256dbd659f395918f87e1d33913450ff9bbaed"},
-    {file = "Mosek-10.0.47-cp310-cp310-manylinux2014_aarch64.whl", hash = "sha256:0f8ad11acf2f8e07abcd0e2384966d307bf1a21cf2ab8a94cca03052f67aeb76"},
-    {file = "Mosek-10.0.47-cp310-cp310-manylinux2014_x86_64.whl", hash = "sha256:a0c3ae04c3ad0b625afb3399b5de0bc36ca1ede8e2d17e04effcbb23a10e5414"},
-    {file = "Mosek-10.0.47-cp310-cp310-win_amd64.whl", hash = "sha256:cd84d0cb450e4e576ee92a1dc33da8b63c7af629c4f99f26ab86ac95462cbe8d"},
-    {file = "Mosek-10.0.47-cp37-cp37m-macosx_10_15_x86_64.whl", hash = "sha256:d6d806d3db044201ac5e50da259b5354837f2d2e69ae666a30cb6a4acaa2da2b"},
-    {file = "Mosek-10.0.47-cp37-cp37m-manylinux2014_aarch64.whl", hash = "sha256:cb7108665663e0d4450e4913d7102e217a8392a3c40e7a9537158e6d5a7a9101"},
-    {file = "Mosek-10.0.47-cp37-cp37m-manylinux2014_x86_64.whl", hash = "sha256:230980e6444bb5ded52f7af21f5154eae4196fe67fefc1bad5b44e0ca26704d1"},
-    {file = "Mosek-10.0.47-cp37-cp37m-win_amd64.whl", hash = "sha256:b143e847d3c3803e87f820649c1ceffc2f4abea05440ef6e8be36754063f4d67"},
-    {file = "Mosek-10.0.47-cp38-cp38-macosx_10_15_x86_64.whl", hash = "sha256:c21f73c30aae87d139b4d05040b9289ce484ed3b0b1d300a3b975c4d1b314862"},
-    {file = "Mosek-10.0.47-cp38-cp38-macosx_11_0_arm64.whl", hash = "sha256:d79f008865a7748ed9e0ded57cc978353c7d736afcd5939d78a1b4455d779d81"},
-    {file = "Mosek-10.0.47-cp38-cp38-manylinux2014_aarch64.whl", hash = "sha256:0e834f2400dbc5021f7d2c0ba628426f29b65dbd9379bf9fdf8d3608e2f503ca"},
-    {file = "Mosek-10.0.47-cp38-cp38-manylinux2014_x86_64.whl", hash = "sha256:952bdc59438b5de67fc10a84392cb6308b856bffa39ab6a2e804ae41ef824657"},
-    {file = "Mosek-10.0.47-cp38-cp38-win_amd64.whl", hash = "sha256:c4fdb6f8d259e8f65729b7a5eafdb0faa0a06b85feb9aed6f2e5f087d348a0e8"},
-    {file = "Mosek-10.0.47-cp39-cp39-macosx_10_15_x86_64.whl", hash = "sha256:9d4b8b7d60ae84a3666febfb5bcfae11022f0b08654ede97d855fc8a8b9ff7a3"},
-    {file = "Mosek-10.0.47-cp39-cp39-macosx_11_0_arm64.whl", hash = "sha256:12290b32df15de3518cb58c198a20ebdb7df59d42b437eb5a4d5fb9ebceb4da3"},
-    {file = "Mosek-10.0.47-cp39-cp39-manylinux2014_aarch64.whl", hash = "sha256:81edd312c79a416a294f40454af092791fc805e101a5b9026b6700d4dfb2e3a2"},
-    {file = "Mosek-10.0.47-cp39-cp39-manylinux2014_x86_64.whl", hash = "sha256:375b11a82933e554c12f96675f601849d27e38bbbd179d3262d58061f31877a8"},
-    {file = "Mosek-10.0.47-cp39-cp39-win_amd64.whl", hash = "sha256:68ee31836ca570472eff427f6a72b940dc06c9d7b7720d8bebc6614a0d4cad6b"},
+    {file = "Mosek-10.1.28-cp37-abi3-macosx_10_15_x86_64.whl", hash = "sha256:51497eb726af583d6cb041c4ad33379bd9865542db20a36b70dead6fc2780381"},
+    {file = "Mosek-10.1.28-cp37-abi3-manylinux2014_x86_64.whl", hash = "sha256:7c1815081174a0393bebaf589e074f7257a6e15b1b4adb535fa99173516713d6"},
+    {file = "Mosek-10.1.28-cp37-abi3-manylinux_2_29_aarch64.whl", hash = "sha256:0518dab67c54785005a7d8d02e6fc7ce23fe57fddc171b61e8f4edefec26b9dc"},
+    {file = "Mosek-10.1.28-cp37-abi3-win_amd64.whl", hash = "sha256:f105f89822ec91b77b344450b62a049c3373ce349eaa227d3a747ee079d078f0"},
+    {file = "Mosek-10.1.28-cp38-abi3-macosx_11_0_arm64.whl", hash = "sha256:e12aad5a8d55e5c99bc49faec43512574bed002f56ddd29cbf0a3620a6574575"},
 ]
+
+[package.dependencies]
+numpy = "*"
 
 [[package]]
 name = "nodeenv"
@@ -439,5 +428,5 @@ test = ["covdefaults (>=2.3)", "coverage (>=7.2.7)", "coverage-enable-subprocess
 
 [metadata]
 lock-version = "2.0"
-python-versions = ">=3.9"
-content-hash = "ff19d2a3e880d9330ba1f26007bfc321a9311048f737af80b29a3e7085dd03c2"
+python-versions = ">=3.9,<3.13"
+content-hash = "17b3596e1872b94b6e605c97fd00754344881ee78844f418a1a00ea042d9c6e2"
