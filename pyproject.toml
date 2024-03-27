@@ -16,6 +16,7 @@ numpy = "*"
 mosek = "~10.1.28"
 pytest = "*"
 pytest-cov = "*"
+pytest-mock = "*"
 pre-commit = "*"
 
 [build-system]
