@@ -25,7 +25,9 @@ jobs:
 
     steps:
       - uses: cvxgrp/.github/actions/test@main
-
+        with:
+          source-folder: mosek_license
+          
       - name: Coveralls GitHub Action
         uses: coverallsapp/github-action@v2
         with:
