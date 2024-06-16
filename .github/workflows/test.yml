@@ -20,4 +20,5 @@ jobs:
 
       - uses: cvxgrp/.github/actions/test
         with:
+          source-folder: 'mosek_license'
           python-version: ${{ matrix.python-version }}
