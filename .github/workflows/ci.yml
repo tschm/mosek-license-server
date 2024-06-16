@@ -15,21 +15,10 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - uses: cvxgrp/.github/actions/test@main
+      - name: Set up Git repository
+        uses: actions/checkout@v4
+
+      - uses: ./actions/test
         with:
           python-version: ${{ matrix.python-version }}
-
-
-  test-coverage:
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: cvxgrp/.github/actions/test@main
-        with:
-          source-folder: mosek_license
-
-      - name: Coveralls GitHub Action
-        uses: coverallsapp/github-action@v2
-        with:
-          files: artifacts/tests/coverage/coverage.info
-          format: lcov
+  
