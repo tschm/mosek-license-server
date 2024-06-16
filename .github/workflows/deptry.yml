@@ -11,6 +11,6 @@ jobs:
       - name: Set up Git repository
         uses: actions/checkout@v4
 
-      - uses: cvxgrp/.github/actions/deptry
+      - uses: cvxgrp/.github/actions/deptry@main
         with:
           source-folder: "mosek_license"
