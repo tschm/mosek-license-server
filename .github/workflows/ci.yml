@@ -21,4 +21,3 @@ jobs:
       - uses: cvxgrp/.github/actions/test
         with:
           python-version: ${{ matrix.python-version }}
-  
