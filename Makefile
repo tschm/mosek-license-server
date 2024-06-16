@@ -7,11 +7,13 @@ SHELL=/bin/bash
 install:  ## Install a virtual environment
 	@poetry install -vv
 
+
 .PHONY: fmt
 fmt:  ## Run autoformatting and linting
 	@poetry run pip install pre-commit
 	@poetry run pre-commit install
 	@poetry run pre-commit run --all-files
+
 
 .PHONY: clean
 clean:  ## Clean up caches and build artifacts
