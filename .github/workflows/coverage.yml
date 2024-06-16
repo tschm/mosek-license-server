@@ -1,0 +1,17 @@
+name: "coverage"
+
+on:
+  push:
+
+jobs:
+  coverage:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: cvxgrp/.github/actions/test@main
+
+      - name: Coveralls GitHub Action
+        uses: coverallsapp/github-action@v2
+        with:
+          files: artifacts/tests/coverage/coverage.info
+          format: lcov
