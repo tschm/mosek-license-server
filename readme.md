@@ -3,7 +3,9 @@
 [![PyPI version](https://badge.fury.io/py/mosek-license-server.svg)](https://badge.fury.io/py/mosek-license-server)
 [![Apache 2.0 License](https://img.shields.io/badge/License-APACHEv2-brightgreen.svg)](https://github.com/tschm/mosek-license-server/blob/main/LICENSE)
 
-[![Downloads](https://static.pepy.tech/personalized-badge/mosek-license-server?period=month&units=international_system&left_color=black&right_color=orange&left_text=PyPI%20downloads%20per%20month)](https://www.spiegel.de)
+[![Downloads](https://static.pepy.tech/badge/mosek-license-server/month)](https://pepy.tech/project/mosek-license-server)
+
+[![Downloads](https://static.pepy.tech/personalized-badge/mosek-license-server?period=month&units=international_system&left_color=black&right_color=orange&left_text=PyPI%20downloads%20per%20month)](https://www.pepy.tech/projects/mosek-license-server)
 
 [![Downloads](https://static.pepy.tech/personalized-badge/mosek-license-server?period=month&units=international_system&left_color=black&right_color=orange&left_text=PyPI%20downloads%20per%20month)](https://www.pepy.tech/projects/mosek-license-server)
 
