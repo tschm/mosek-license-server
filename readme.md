@@ -4,7 +4,7 @@
 [![Apache 2.0 License](https://img.shields.io/badge/License-APACHEv2-brightgreen.svg)](https://github.com/tschm/mosek-license-server/blob/main/LICENSE)
 [![Downloads](https://static.pepy.tech/badge/mosek-license-server/month)](https://pepy.tech/project/mosek-license-server)
 [![pre-commit.ci status](https://results.pre-commit.ci/badge/github/tschm/mosek-license-server/main.svg)](https://results.pre-commit.ci/latest/github/tschm/mosek-license-server/main)
-[![Coverage Status](https://coveralls.io/repos/github/tschm/mosek-license-server/badge.png?branch=main)](https://coveralls.io/github/tschm/mosek-license-server?branch=main)
+[![Coverage Status](https://coveralls.io/repos/github/tschm/mosek-license-server/badge.svg?branch=main)](https://coveralls.io/github/tschm/mosek-license-server?branch=main)
 
 Using a [nginx image](https://hub.docker.com/_/nginx/) we expose a Mosek license
 on a server to be accessible from various research machines without sharing the actual
