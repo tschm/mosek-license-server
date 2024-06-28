@@ -2,7 +2,7 @@
 
 [![PyPI version](https://badge.fury.io/py/mosek-license-server.svg)](https://badge.fury.io/py/mosek-license-server)
 [![Apache 2.0 License](https://img.shields.io/badge/License-APACHEv2-brightgreen.svg)](https://github.com/tschm/mosek-license-server/blob/main/LICENSE)
-[Downloads](https://static.pepy.tech/personalized-badge/mosek-license-server?period=month&units=international_system&left_color=black&right_color=orange&left_text=PyPI%20downloads%20per%20month)
+![Downloads](https://static.pepy.tech/personalized-badge/mosek-license-server?period=month&units=international_system&left_color=black&right_color=orange&left_text=PyPI%20downloads%20per%20month)
 [![Downloads](https://static.pepy.tech/personalized-badge/mosek-license-server?period=month&units=international_system&left_color=black&right_color=orange&left_text=PyPI%20downloads%20per%20month)](https://www.pepy.tech/projects/mosek-license-server)
 [![pre-commit.ci status](https://results.pre-commit.ci/badge/github/tschm/mosek-license-server/main.svg)](https://results.pre-commit.ci/latest/github/tschm/mosek-license-server/main)
 
