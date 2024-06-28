@@ -7,7 +7,6 @@
 
 [![Coverage Status](https://coveralls.io/repos/github/tschm/mosek-license-server/badge.png?branch=main)](https://coveralls.io/github/tschm/mosek-license-server?branch=main)
 
-
 Using a [nginx image](https://hub.docker.com/_/nginx/) we expose a Mosek license
 on a server to be accessible from various research machines without sharing the actual
 license file in the underlying repositories.
