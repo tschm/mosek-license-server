@@ -177,16 +177,16 @@ files = [
 
 [[package]]
 name = "mosek"
-version = "10.2.4"
+version = "10.2.5"
 description = "Python API for Mosek"
 optional = false
 python-versions = "<3.13,>=3.7"
 files = [
-    {file = "Mosek-10.2.4-cp37-abi3-macosx_10_15_x86_64.whl", hash = "sha256:65d2c56bcf7d89dd5988a56c4e8870d541b9d6a46af21dbd5fc065672895f985"},
-    {file = "Mosek-10.2.4-cp37-abi3-manylinux2014_x86_64.whl", hash = "sha256:2d35cd738a381832086096b7b15813637d96e0ad0cfbba1a90b53bb1aedbf65f"},
-    {file = "Mosek-10.2.4-cp37-abi3-manylinux_2_29_aarch64.whl", hash = "sha256:7dc78e519580ccb3f1bb5a09be8062d287efa1ec07a960880b00ad77de3a922b"},
-    {file = "Mosek-10.2.4-cp37-abi3-win_amd64.whl", hash = "sha256:302e0db4c753da368f24358120bef390b9700b8aafdc858170f1427e315b4a3b"},
-    {file = "Mosek-10.2.4-cp38-abi3-macosx_11_0_arm64.whl", hash = "sha256:6ce107cde4adcfb4c52d649d115cdec7002c93f2c926624aff31ae1a194d1575"},
+    {file = "Mosek-10.2.5-cp37-abi3-macosx_10_15_x86_64.whl", hash = "sha256:e774509fb317fb4152ca9d3c53d92cb305854204dc3fccb97493d5db5e7848c1"},
+    {file = "Mosek-10.2.5-cp37-abi3-manylinux2014_x86_64.whl", hash = "sha256:767117a99b8da08e9c71b873c925045feb89ade6e5d3db95aa560448b7832204"},
+    {file = "Mosek-10.2.5-cp37-abi3-manylinux_2_29_aarch64.whl", hash = "sha256:6048f28d38b5c3ec03d6ec78a3100434b024a3b5d41d9967c7a38458fa8256ea"},
+    {file = "Mosek-10.2.5-cp37-abi3-win_amd64.whl", hash = "sha256:74e144c5efdba4cc034dcc5ba6f50b99a5da15426f8878a63ea090aea595a76f"},
+    {file = "Mosek-10.2.5-cp38-abi3-macosx_11_0_arm64.whl", hash = "sha256:be757c1682f318ac63b85b0a19f8f2f4eb3a94682c6ccf9ec1190e1b72db5fd2"},
 ]
 
 [package.dependencies]
