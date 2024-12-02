@@ -14,7 +14,7 @@ python = ">=3.9,<3.14"
 [tool.poetry.group.test.dependencies]
 numpy = ">=2.0"
 mosek = ">=10.2.0"
-pytest = "8.3.3"
+pytest = "8.3.4"
 pytest-cov = "6.0.0"
 pre-commit = "4.0.1"
 
