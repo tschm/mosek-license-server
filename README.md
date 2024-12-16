@@ -95,14 +95,15 @@ works.
 
 Still lost? Please open an issue.
 
-## Poetry
+## uv
 
-We assume you share already the love for [Poetry](https://python-poetry.org).
-Once you have installed poetry you can perform
+You need to install [task](https://taskfile.dev).
+Starting with
 
 ```bash
-make install
+task simulator:install
 ```
 
-to replicate the virtual environment we have defined in [pyproject.toml](pyproject.toml)
-and locked in [poetry.lock](poetry.lock).
+will install [uv](https://github.com/astral-sh/uv) and create
+the virtual environment defined in
+pyproject.toml and locked in uv.lock.
