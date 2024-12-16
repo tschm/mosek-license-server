@@ -21,7 +21,7 @@ jobs:
       - name: Set up Git repository
         uses: actions/checkout@v4
 
-      - uses: cvxgrp/.github/actions/test@main
+      - uses: cvxgrp/.github/actions/uv/test@main
         with:
           source-folder: 'mosek_license'
           python-version: ${{ matrix.python-version }}
