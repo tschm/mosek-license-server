@@ -7,12 +7,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
-    permissions:
-      contents: write
-
     steps:
-      - uses: cvxgrp/.github/actions/build@main
+      - uses: actions/checkout@v4
+      - uses: cvxgrp/.github/actions/uv/build@main
 
   deploy:
     runs-on: ubuntu-latest
