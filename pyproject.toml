@@ -31,7 +31,3 @@ build-backend = "hatchling.build"
 
 [tool.hatch.build.targets.wheel]
 packages = ["mosek_license"]
-
-#[tool.deptry.per_rule_ignores]
-#DEP001 = ["cvxpy", "sklearn"]
-#DEP002 = ["cvxpy-base", "scikit-learn"]
