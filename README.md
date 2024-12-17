@@ -101,7 +101,7 @@ You need to install [task](https://taskfile.dev).
 Starting with
 
 ```bash
-task simulator:install
+task mosek:install
 ```
 
 will install [uv](https://github.com/astral-sh/uv) and create
