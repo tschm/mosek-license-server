@@ -6,6 +6,8 @@
 [![pre-commit.ci status](https://results.pre-commit.ci/badge/github/tschm/mosek-license-server/main.svg)](https://results.pre-commit.ci/latest/github/tschm/mosek-license-server/main)
 [![Coverage Status](https://coveralls.io/repos/github/tschm/mosek-license-server/badge.svg?branch=main)](https://coveralls.io/github/tschm/mosek-license-server?branch=main)
 
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/tschm/mosek-license-server)
+
 Using a [nginx image](https://hub.docker.com/_/nginx/) we expose a Mosek license
 on a server to be accessible from various research machines without sharing the actual
 license file in the underlying repositories.
