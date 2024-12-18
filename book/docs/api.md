@@ -2,4 +2,4 @@
 
 ## pdoc
 
-[API](https://www.cvxgrp.org/simulator/pdoc/)
+[API](https://tschm.github.io/mosek-license-server/pdoc/)

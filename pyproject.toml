@@ -5,7 +5,7 @@ description = "Expose a mosek license via a nginx server"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = []
-authors = [{name = "Thomas Schmelzer", email = "thomas.schmelzer@gmail.com"}]
+authors = [{name = "Tsdhomas Schmelzer", email = "thomas.schmelzer@gmail.com"}]
 
 [project.urls]
 repository = "https://github.com/tschm/mosek-license-server"
