@@ -1,0 +1,48 @@
+mosek_license.license
+=====================
+
+.. py:module:: mosek_license.license
+
+.. autoapi-nested-parse::
+
+   Mosek license
+
+
+
+Attributes
+----------
+
+.. autoapisummary::
+
+   mosek_license.license.ENV_VARNAME
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   mosek_license.license.upsert
+   mosek_license.license.current
+   mosek_license.license._url
+
+
+Module Contents
+---------------
+
+.. py:data:: ENV_VARNAME
+   :value: 'MOSEKLM_LICENSE_FILE'
+
+
+.. py:function:: upsert(server=None)
+
+   Insert or update an environment variable MOSEKLM_LICENSE_FILE
+
+
+.. py:function:: current()
+
+   Get the current license
+
+
+.. py:function:: _url(server=None)
+
