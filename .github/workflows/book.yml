@@ -21,12 +21,16 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: cvxgrp/.github/actions/uv/pdoc@main
+        with:
+          source-folder: 'mosek_license'
 
   test:
     runs-on: "ubuntu-latest"
     steps:
       - uses: actions/checkout@v4
       - uses: cvxgrp/.github/actions/uv/coverage@main
+        with:
+          source-folder: 'mosek_license'
 
   jupyter:
     runs-on: "ubuntu-latest"
