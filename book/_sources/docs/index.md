@@ -1,4 +1,4 @@
-# Mosek License Server
+# [Mosek License Server](https://tschm.github.io/mosek-license-server/book)
 
 [![PyPI version](https://badge.fury.io/py/mosek-license-server.svg)](https://badge.fury.io/py/mosek-license-server)
 [![Apache 2.0 License](https://img.shields.io/badge/License-APACHEv2-brightgreen.svg)](https://github.com/tschm/mosek-license-server/blob/main/LICENSE)
