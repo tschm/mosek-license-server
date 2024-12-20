@@ -11,17 +11,19 @@ Contributions are made through
 [pull requests](https://help.github.com/articles/using-pull-requests/).
 Before sending a pull request, make sure you do the following:
 
-- Run 'make fmt' to make sure your code adheres to our [coding style](#code-style).
+- Run 'task mosek:fmt' to make sure your code adheres to our [coding style](#code-style).
   This step also includes our license on top of your new files.
 
 ## Building mosek-license-server from source
+
+Please install [task](https://taskfile.dev).
 
 You'll need to build mosek-license-server locally in order to start editing code.
 To install mosek-license-server from source, clone the Github
 repository, navigate to its root, and run the following command:
 
 ```bash
-make install
+task mosek:install
 ```
 
 We assume you have [poetry](https://python-poetry.org) installed.
@@ -61,7 +63,7 @@ Before sending us a pull request, navigate to the project root
 and run
 
 ```bash
-make fmt
+task mosek:fmt
 ```
 
 to make sure that your changes abide by our style conventions. Please fix any
