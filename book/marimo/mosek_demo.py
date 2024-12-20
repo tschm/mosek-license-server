@@ -69,12 +69,7 @@ def _(qc1lvl, qc1sn, solx, soly):
     print("qc1 levels                = %s" % str(qc1lvl))
     print("qc1 dual conic var levels = %s" % str(qc1sn))
     return
-
-
-@app.cell
-def _():
-    return
-
+    
 
 if __name__ == "__main__":
     app.run()
