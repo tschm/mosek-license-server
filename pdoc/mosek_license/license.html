@@ -127,7 +127,7 @@
 </span><span id="L-63"><a href="#L-63"><span class="linenos">63</span></a>
 </span><span id="L-64"><a href="#L-64"><span class="linenos">64</span></a>        <span class="n">expiry</span> <span class="o">=</span> <span class="n">feature_line</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span>
 </span><span id="L-65"><a href="#L-65"><span class="linenos">65</span></a>        <span class="n">expiry</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="n">expiry</span><span class="p">,</span> <span class="s2">&quot;</span><span class="si">%d</span><span class="s2">-%b-%Y&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">date</span><span class="p">()</span>
-</span><span id="L-66"><a href="#L-66"><span class="linenos">66</span></a>        <span class="c1"># today = datetime.strptime(&quot;01-Jan-2025&quot;, &quot;%d-%b-%Y&quot;).date()</span>
+</span><span id="L-66"><a href="#L-66"><span class="linenos">66</span></a>
 </span><span id="L-67"><a href="#L-67"><span class="linenos">67</span></a>        <span class="k">assert</span> <span class="n">expiry</span> <span class="o">&gt;=</span> <span class="n">today</span><span class="p">,</span> <span class="s2">&quot;YOUR LICENSE file has expired&quot;</span>
 </span><span id="L-68"><a href="#L-68"><span class="linenos">68</span></a>
 </span><span id="L-69"><a href="#L-69"><span class="linenos">69</span></a>        <span class="k">return</span> <span class="n">license</span>
