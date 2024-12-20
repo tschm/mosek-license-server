@@ -91,10 +91,6 @@ In case you experience problems please check:
 curl <http://localhost:8080/mosek>
 ```
 
-works.
-
-- you can run the demo in the demo folder
-
 Still lost? Please open an issue.
 
 ## uv
