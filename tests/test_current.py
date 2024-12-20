@@ -21,7 +21,7 @@ def test_mock(resource_dir):
         license = _url(today=datetime.strptime("01-Jan-2025", "%d-%b-%Y").date())
 
         # read the file again
-        with open(resource_dir / "license") as f:
+        with open(resource_dir / "license", newline=None) as f:
             assert license == f.read()  # .decode("utf-8")
 
 
