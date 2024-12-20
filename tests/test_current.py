@@ -1,4 +1,6 @@
-from unittest.mock import MagicMock, patch
+import urllib.request
+from datetime import datetime
+from unittest.mock import patch
 
 import pytest
 
@@ -10,15 +12,14 @@ def test_current():
         current()
 
 
-@patch("urllib.request.urlopen")
-def test_server(mock_urlopen):
-    # https://stackoverflow.com/questions/32043035/python-3-urlopen-context-manager- mocking
+def test_mock(resource_dir):
+    # https://stackoverflow.com/questions/32043035/python-3-urlopen-context-manager-mocking
+    data = open(resource_dir / "license", "rb")
 
-    mock = MagicMock()
-    mock.read.return_value = b"maffay"
-    mock.__enter__.return_value = mock
-    mock_urlopen.return_value = mock
+    with patch.object(urllib.request, "urlopen", return_value=data):
+        # give some date to the url function to modify today's date
+        license = _url(today=datetime.strptime("01-Jan-2025", "%d-%b-%Y").date())
 
-    assert _url(server="http://localhost:8080/mosek") == "maffay"
-
-    # assert os.environ["MOSEKLM_LICENSE_FILE"] == "maffay"
+        # read the file again
+        with open(resource_dir / "license") as f:
+            assert license == f.read()  # .decode("utf-8")
