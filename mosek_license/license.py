@@ -42,7 +42,7 @@ def current():
 def _url(server=None, today=None):
     server = server or "http://localhost:8080/mosek"
     with urllib.request.urlopen(server) as page:
-        license = page.read().decode("utf-8")
+        license = page.read().decode("utf-8").replace("\r\n", "\n")
 
         lines = [line.strip() for line in license.split("\n") if line.strip()]
 
