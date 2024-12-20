@@ -63,7 +63,7 @@ def _url(server=None, today=None):
 
         expiry = feature_line[4]
         expiry = datetime.strptime(expiry, "%d-%b-%Y").date()
-        # today = datetime.strptime("01-Jan-2025", "%d-%b-%Y").date()
+
         assert expiry >= today, "YOUR LICENSE file has expired"
 
         return license
