@@ -87,9 +87,9 @@
 </span><span id="L-23"><a href="#L-23"><span class="linenos">23</span></a><span class="n">ENV_VARNAME</span> <span class="o">=</span> <span class="s2">&quot;MOSEKLM_LICENSE_FILE&quot;</span>
 </span><span id="L-24"><a href="#L-24"><span class="linenos">24</span></a>
 </span><span id="L-25"><a href="#L-25"><span class="linenos">25</span></a>
-</span><span id="L-26"><a href="#L-26"><span class="linenos">26</span></a><span class="k">def</span> <span class="nf">upsert</span><span class="p">(</span><span class="n">server</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+</span><span id="L-26"><a href="#L-26"><span class="linenos">26</span></a><span class="k">def</span> <span class="nf">upsert</span><span class="p">(</span><span class="n">server</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">today</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
 </span><span id="L-27"><a href="#L-27"><span class="linenos">27</span></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Insert or update an environment variable MOSEKLM_LICENSE_FILE&quot;&quot;&quot;</span>
-</span><span id="L-28"><a href="#L-28"><span class="linenos">28</span></a>    <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="n">ENV_VARNAME</span><span class="p">]</span> <span class="o">=</span> <span class="n">_url</span><span class="p">(</span><span class="n">server</span><span class="o">=</span><span class="n">server</span><span class="p">)</span>
+</span><span id="L-28"><a href="#L-28"><span class="linenos">28</span></a>    <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="n">ENV_VARNAME</span><span class="p">]</span> <span class="o">=</span> <span class="n">_url</span><span class="p">(</span><span class="n">server</span><span class="o">=</span><span class="n">server</span><span class="p">,</span> <span class="n">today</span><span class="o">=</span><span class="n">today</span><span class="p">)</span>
 </span><span id="L-29"><a href="#L-29"><span class="linenos">29</span></a>
 </span><span id="L-30"><a href="#L-30"><span class="linenos">30</span></a>
 </span><span id="L-31"><a href="#L-31"><span class="linenos">31</span></a><span class="k">def</span> <span class="nf">current</span><span class="p">():</span>
@@ -152,15 +152,15 @@
 <div class="attr function">
             
         <span class="def">def</span>
-        <span class="name">upsert</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">server</span><span class="o">=</span><span class="kc">None</span></span><span class="return-annotation">):</span></span>
+        <span class="name">upsert</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">server</span><span class="o">=</span><span class="kc">None</span>, </span><span class="param"><span class="n">today</span><span class="o">=</span><span class="kc">None</span></span><span class="return-annotation">):</span></span>
 
                 <label class="view-source-button" for="upsert-view-source"><span>View Source</span></label>
 
     </div>
     <a class="headerlink" href="#upsert"></a>
-            <div class="pdoc-code codehilite"><pre><span></span><span id="upsert-27"><a href="#upsert-27"><span class="linenos">27</span></a><span class="k">def</span> <span class="nf">upsert</span><span class="p">(</span><span class="n">server</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+            <div class="pdoc-code codehilite"><pre><span></span><span id="upsert-27"><a href="#upsert-27"><span class="linenos">27</span></a><span class="k">def</span> <span class="nf">upsert</span><span class="p">(</span><span class="n">server</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">today</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
 </span><span id="upsert-28"><a href="#upsert-28"><span class="linenos">28</span></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Insert or update an environment variable MOSEKLM_LICENSE_FILE&quot;&quot;&quot;</span>
-</span><span id="upsert-29"><a href="#upsert-29"><span class="linenos">29</span></a>    <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="n">ENV_VARNAME</span><span class="p">]</span> <span class="o">=</span> <span class="n">_url</span><span class="p">(</span><span class="n">server</span><span class="o">=</span><span class="n">server</span><span class="p">)</span>
+</span><span id="upsert-29"><a href="#upsert-29"><span class="linenos">29</span></a>    <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="n">ENV_VARNAME</span><span class="p">]</span> <span class="o">=</span> <span class="n">_url</span><span class="p">(</span><span class="n">server</span><span class="o">=</span><span class="n">server</span><span class="p">,</span> <span class="n">today</span><span class="o">=</span><span class="n">today</span><span class="p">)</span>
 </span></pre></div>
 
 
