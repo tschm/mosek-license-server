@@ -23,9 +23,9 @@ from datetime import datetime
 ENV_VARNAME = "MOSEKLM_LICENSE_FILE"
 
 
-def upsert(server=None):
+def upsert(server=None, today=None):
     """Insert or update an environment variable MOSEKLM_LICENSE_FILE"""
-    os.environ[ENV_VARNAME] = _url(server=server)
+    os.environ[ENV_VARNAME] = _url(server=server, today=today)
 
 
 def current():
