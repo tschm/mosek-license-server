@@ -4,22 +4,9 @@ on:
 - push
 
 jobs:
-  #marimo:
-  #  runs-on: "ubuntu-latest"
-  #  steps:
-  #    - uses: actions/checkout@v4
-  #    - uses: cvxgrp/.github/actions/uv/marimo@main
-
-  #sphinx:
-  #  runs-on: "ubuntu-latest"
-  #  steps:
-  #    - uses: actions/checkout@v4
-  #    - uses: cvxgrp/.github/actions/uv/sphinx@main
-
   pdoc:
     runs-on: "ubuntu-latest"
     steps:
-      - uses: actions/checkout@v4
       - uses: cvxgrp/.github/actions/uv/pdoc@main
         with:
           source-folder: 'mosek_license'
@@ -27,7 +14,6 @@ jobs:
   test:
     runs-on: "ubuntu-latest"
     steps:
-      - uses: actions/checkout@v4
       - uses: cvxgrp/.github/actions/uv/coverage@main
         with:
           source-folder: 'mosek_license'
@@ -35,7 +21,6 @@ jobs:
   jupyter:
     runs-on: "ubuntu-latest"
     steps:
-      - uses: actions/checkout@v4
       - uses: cvxgrp/.github/actions/uv/jupyter@main
 
   book:
