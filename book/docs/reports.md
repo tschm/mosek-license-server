@@ -6,4 +6,4 @@
 
 ## Coverage
 
-[Coverage](https://tschm.github.io/mosek-licenses-server/tests/html-coverage/index.html)
+[Coverage](https://tschm.github.io/mosek-license-server/tests/html-coverage/index.html)
