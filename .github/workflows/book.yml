@@ -3,6 +3,10 @@ name: "book"
 on:
 - push
 
+permissions:
+    contents: read
+    pull-requests: write
+
 jobs:
   pdoc:
     runs-on: "ubuntu-latest"
