@@ -6,6 +6,8 @@ on:
 jobs:
   pre-commit:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     steps:
     - uses: actions/checkout@v4
     - uses: pre-commit/action@2c7b3805fd2a0fd8c1884dcaebf91fc102a13ecd
@@ -14,19 +16,23 @@ jobs:
 
   test:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     steps:
       - uses: cvxgrp/.github/actions/uv/coverage@main
         with:
           source-folder: mosek_license
 
       - name: Coveralls GitHub Action
-        uses: coverallsapp/github-action@v2
+        uses: coverallsapp/github-action@cfd0633edbd2411b532b808ba7a8b5e04f76d2c8
         with:
           files: artifacts/tests/coverage/coverage.info
           format: lcov
 
   deptry:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     steps:
       - uses: cvxgrp/.github/actions/uv/deptry@main
         with:
