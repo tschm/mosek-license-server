@@ -10,9 +10,6 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
-    #permissions:
-      #id-token: none
-      #contents: write   # needed to upload into dist branch
     steps:
       - uses: cvxgrp/.github/actions/uv/build@main
 
@@ -24,7 +21,6 @@ jobs:
     permissions:
       # This permission is required for trusted publishing.
       id-token: write
-      #contents: read
 
     steps:
       - uses: cvxgrp/.github/actions/publish@main
