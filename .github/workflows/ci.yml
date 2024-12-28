@@ -3,16 +3,17 @@ name: "ci"
 on:
 - push
 
+permissions:
+  contents: read
+  pull-requests: write  # Needed for Dependabot to create PRs
+  issues: write         # Needed for creating issues
+  checks: write         # Needed for posting test results
+
+
 jobs:
   test:
     # The type of runner that the job will run on
     runs-on: ${{ matrix.os }}
-
-    permissions:
-      contents: read
-      pull-requests: write  # Needed for Dependabot to create PRs
-      issues: write         # Needed for creating issues
-      checks: write         # Needed for posting test results
 
     strategy:
       matrix:

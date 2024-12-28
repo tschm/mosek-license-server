@@ -4,8 +4,10 @@ on:
 - push
 
 permissions:
-    contents: read
-    pull-requests: write
+  contents: read
+  pull-requests: write  # Needed for Dependabot to create PRs
+  issues: write         # Needed for creating issues
+  checks: write         # Needed for posting test results
 
 jobs:
   pdoc:
@@ -32,7 +34,7 @@ jobs:
     needs: [test, pdoc, jupyter]
 
     permissions:
-      contents: write
+      contents: write   # needed to update gh-pages branch
 
     steps:
       - uses: cvxgrp/.github/actions/book@main
