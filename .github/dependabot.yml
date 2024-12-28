@@ -9,12 +9,6 @@ updates:
     directory: "/" # Location of package manifests
     schedule:
       interval: "daily"
-    # Explicitly set the file types to include pyproject.toml
-    package-manager-version: ">=0.2.0" # This ensures compatibility with pyproject.toml
-    allow:
-      - dependency-type: "all"
-    # Optional but recommended: manifest file path
-    manifest-file: "pyproject.toml"
     
   - package-ecosystem: "github-actions"
     directory: "/"
