@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
-    - uses: pre-commit/action@2c7b3805fd2a0fd8c1884dcaebf91fc102a13ecd
+    - uses: pre-commit/action@576ff52938d158a24ac7e009dfa94b1455e7df99
       with:
         extra_args: '--verbose --all-files'
 
