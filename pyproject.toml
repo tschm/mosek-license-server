@@ -14,7 +14,6 @@ repository = "https://github.com/tschm/mosek-license-server"
 dev = [
     "pytest-cov>=6.0.0",
     "pytest>=8.3.3",
-    "pre-commit>=4.0.1",
     "mosek>=10.2.0"
 ]
 
