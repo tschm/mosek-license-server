@@ -14,6 +14,7 @@
 """
 Mosek license
 """
+
 from __future__ import annotations
 
 import os
@@ -34,8 +35,7 @@ def current():
         return os.environ[ENV_VARNAME]
     except KeyError:
         raise KeyError(
-            "The environment variable MOSEKLM_LICENSE_FILE is not set. "
-            "Please use the upsert function to set it."
+            "The environment variable MOSEKLM_LICENSE_FILE is not set. " "Please use the upsert function to set it."
         )
 
 
@@ -48,9 +48,7 @@ def _url(server=None, today=None):
 
         assert lines[0] == "START_LICENSE", "LICENSE does not start with START_LICENSE"
         assert lines[-1] == "END_LICENSE", "LICENSE does not end with END_LICENSE"
-        assert (
-            lines[1] == "VENDOR MOSEKLM"
-        ), "LICENSE does not start with VENDOR MOSEKLM in 2nd line"
+        assert lines[1] == "VENDOR MOSEKLM", "LICENSE does not start with VENDOR MOSEKLM in 2nd line"
 
         for line in lines:
             if line.startswith("FEATURE"):
