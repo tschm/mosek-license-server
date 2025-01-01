@@ -26,8 +26,6 @@ repository, navigate to its root, and run the following command:
 task mosek:install
 ```
 
-We assume you have [poetry](https://python-poetry.org) installed.
-
 ## Contributing code
 
 To contribute to mosek-license-server, send us pull requests.
