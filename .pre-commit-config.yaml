@@ -5,6 +5,7 @@ repos:
       - id: check-toml
       - id: end-of-file-fixer
       - id: trailing-whitespace
+      - id: config-yaml
 
   - repo: https://github.com/astral-sh/ruff-pre-commit
     rev: 'v0.8.4'
