@@ -42,6 +42,11 @@ repos:
           args:
             ['--license-filepath', 'copyright.txt', '--no-extra-eol']
 
+  - repo: https://github.com/abravalheri/validate-pyproject
+    rev: v0.23
+    hooks:
+      - id: validate-pyproject
+
   - repo: https://github.com/rhysd/actionlint
     rev: v1.7.5
     hooks:
