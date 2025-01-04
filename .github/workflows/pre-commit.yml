@@ -13,6 +13,9 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout [${{ github.repository }}]
+        uses: actions/checkout@v4
+
       - uses: cvxgrp/.github/actions/uv/coverage@main
         with:
           source-folder: mosek_license
@@ -26,6 +29,9 @@ jobs:
   deptry:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout [${{ github.repository }}]
+        uses: actions/checkout@v4
+
       - uses: cvxgrp/.github/actions/uv/deptry@main
         with:
           source-folder: mosek_license
