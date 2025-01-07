@@ -16,7 +16,7 @@ jobs:
       - name: Checkout [${{ github.repository }}]
         uses: actions/checkout@v4
 
-      - uses: cvxgrp/.github/actions/uv/coverage@v2.0.0
+      - uses: cvxgrp/.github/actions/uv/coverage@v2.0.1
         with:
           source-folder: mosek_license
 
@@ -32,6 +32,6 @@ jobs:
       - name: Checkout [${{ github.repository }}]
         uses: actions/checkout@v4
 
-      - uses: cvxgrp/.github/actions/uv/deptry@v2.0.0
+      - uses: cvxgrp/.github/actions/uv/deptry@v2.0.1
         with:
           source-folder: mosek_license
