@@ -2,9 +2,11 @@ name: Upload Python Package
 
 permissions:
   contents: read
-  pull-requests: write  # Needed for Dependabot to create PRs
-  issues: write         # Needed for creating issues
-  checks: write         # Needed for posting test results
+#permissions:
+#  contents: read
+#  pull-requests: write  # Needed for Dependabot to create PRs
+#  issues: write         # Needed for creating issues
+#  checks: write         # Needed for posting test results
 
 on:
   release:
