@@ -45,3 +45,11 @@ build-backend = "hatchling.build"
 
 [tool.hatch.build.targets.wheel]
 packages = ["mosek_license"]
+
+[tool.hatch.build]
+include = [
+    "LICENSE",    # Ensure the LICENSE file is included in your package
+    "README.md",
+    "copyright.txt",
+    "mosek_license"
+]
