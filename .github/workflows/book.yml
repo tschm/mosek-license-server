@@ -15,7 +15,7 @@ jobs:
 
       - uses: cvxgrp/.github/actions/uv/pdoc@v2.0.11
         with:
-          source-folder: 'mosek_license'
+          source-folder: 'src/mosek_license'
 
   test:
     runs-on: "ubuntu-latest"
@@ -25,7 +25,8 @@ jobs:
 
       - uses: cvxgrp/.github/actions/uv/coverage@v2.0.11
         with:
-          source-folder: 'mosek_license'
+          source-folder: 'src/mosek_license'
+          tests-folder: 'src/tests'
 
   jupyter:
     runs-on: "ubuntu-latest"
