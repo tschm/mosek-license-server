@@ -19,7 +19,6 @@ from __future__ import annotations
 
 import os
 import urllib.request
-from datetime import datetime
 
 ENV_VARNAME = "MOSEKLM_LICENSE_FILE"
 
@@ -42,26 +41,28 @@ def current():
 def _url(server=None, today=None):
     server = server or "http://localhost:8080/mosek"
     with urllib.request.urlopen(server) as page:
-        license = page.read().decode("utf-8").replace("\r\n", "\n")
+        return page.read().decode("utf-8").replace("\r\n", "\n")
 
-        lines = [line.strip() for line in license.split("\n") if line.strip()]
+        # I don't control the shape of Mosek license files. So I better remove those checks
 
-        assert lines[0] == "START_LICENSE", "LICENSE does not start with START_LICENSE"
-        assert lines[-1] == "END_LICENSE", "LICENSE does not end with END_LICENSE"
-        assert lines[1] == "VENDOR MOSEKLM", "LICENSE does not start with VENDOR MOSEKLM in 2nd line"
+        # lines = [line.strip() for line in license.split("\n") if line.strip()]
 
-        for line in lines:
-            if line.startswith("FEATURE"):
-                feature_line = line.split(" ")
+        # assert lines[0] == "START_LICENSE", "LICENSE does not start with START_LICENSE"
+        # assert lines[-1] == "END_LICENSE", "LICENSE does not end with END_LICENSE"
+        # assert lines[1] == "VENDOR MOSEKLM", "LICENSE does not start with VENDOR MOSEKLM in 2nd line"
 
-        assert feature_line[0] == "FEATURE", "The line does not start with FEATURE"
-        assert feature_line[2] == "MOSEKLM", "The vendor in the FEATURE is not MOSEKLM"
+        # for line in lines:
+        #    if line.startswith("FEATURE"):
+        #        feature_line = line.split(" ")
 
-        today = today or datetime.today().date()
+        # assert feature_line[0] == "FEATURE", "The line does not start with FEATURE"
+        # assert feature_line[2] == "MOSEKLM", "The vendor in the FEATURE is not MOSEKLM"
 
-        expiry = feature_line[4]
-        expiry = datetime.strptime(expiry, "%d-%b-%Y").date()
+        # today = today or datetime.today().date()
 
-        assert expiry >= today, "YOUR LICENSE file has expired"
+        # expiry = feature_line[4]
+        # expiry = datetime.strptime(expiry, "%d-%b-%Y").date()
 
-        return license
+        # assert expiry >= today, "YOUR LICENSE file has expired"
+
+        # return license
