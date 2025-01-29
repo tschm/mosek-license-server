@@ -1,7 +1,7 @@
 # [Mosek License Server](https://tschm.github.io/mosek-license-server/book)
 
 [![PyPI version](https://badge.fury.io/py/mosek-license-server.svg)](https://badge.fury.io/py/mosek-license-server)
-[![Apache 2.0 License](https://img.shields.io/badge/License-APACHEv2-brightgreen.svg)](https://github.com/tschm/mosek-license-server/blob/main/LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Downloads](https://static.pepy.tech/badge/mosek-license-server/month)](https://pepy.tech/project/mosek-license-server)
 [![pre-commit.ci status](https://results.pre-commit.ci/badge/github/tschm/mosek-license-server/main.svg)](https://results.pre-commit.ci/latest/github/tschm/mosek-license-server/main)
 [![Coverage Status](https://coveralls.io/repos/github/tschm/mosek-license-server/badge.svg?branch=main)](https://coveralls.io/github/tschm/mosek-license-server?branch=main)
@@ -71,7 +71,7 @@ and then
 ```python
 import mosek
 
-from mosek_license import license
+from src.mosek_license import license
 
 license.upsert(server="http://localhost:8080/mosek")
 ```
