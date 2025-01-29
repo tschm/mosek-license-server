@@ -5,7 +5,7 @@ from unittest.mock import patch
 
 import pytest
 
-from src.mosek_license.license import _url, current, upsert
+from mosek_license.license import _url, current, upsert
 
 
 def test_current():
