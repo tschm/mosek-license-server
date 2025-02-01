@@ -42,27 +42,3 @@ def _url(server=None, today=None):
     server = server or "http://localhost:8080/mosek"
     with urllib.request.urlopen(server) as page:
         return page.read().decode("utf-8").replace("\r\n", "\n")
-
-        # I don't control the shape of Mosek license files. So I better remove those checks
-
-        # lines = [line.strip() for line in license.split("\n") if line.strip()]
-
-        # assert lines[0] == "START_LICENSE", "LICENSE does not start with START_LICENSE"
-        # assert lines[-1] == "END_LICENSE", "LICENSE does not end with END_LICENSE"
-        # assert lines[1] == "VENDOR MOSEKLM", "LICENSE does not start with VENDOR MOSEKLM in 2nd line"
-
-        # for line in lines:
-        #    if line.startswith("FEATURE"):
-        #        feature_line = line.split(" ")
-
-        # assert feature_line[0] == "FEATURE", "The line does not start with FEATURE"
-        # assert feature_line[2] == "MOSEKLM", "The vendor in the FEATURE is not MOSEKLM"
-
-        # today = today or datetime.today().date()
-
-        # expiry = feature_line[4]
-        # expiry = datetime.strptime(expiry, "%d-%b-%Y").date()
-
-        # assert expiry >= today, "YOUR LICENSE file has expired"
-
-        # return license
