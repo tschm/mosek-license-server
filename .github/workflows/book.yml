@@ -19,7 +19,6 @@ jobs:
 
   test:
     runs-on: "ubuntu-latest"
-
     steps:
       - uses: cvxgrp/.github/actions/uv/environment@main
 
@@ -30,7 +29,6 @@ jobs:
 
   jupyter:
     runs-on: "ubuntu-latest"
-
     steps:
       - uses: cvxgrp/.github/actions/uv/environment@main
 
