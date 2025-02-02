@@ -11,8 +11,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # construct the environment, including uv, a venv, all dependencies
-      - uses: cvxgrp/.github/actions/uv/environment@main
+      - name: "Build the virtual environment for ${{ github.repository }}"
+        uses: cvxgrp/.github/actions/uv/environment@main
 
       - uses: cvxgrp/.github/actions/deptry@main
         with:
