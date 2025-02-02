@@ -21,7 +21,6 @@ jobs:
     steps:
       - uses: cvxgrp/.github/actions/uv/environment@main
 
-      # This should work now
       - uses: cvxgrp/.github/actions/uv/coverage@main
         with:
           source-folder: 'src/mosek_license'
