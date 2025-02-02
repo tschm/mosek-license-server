@@ -11,36 +11,19 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout [${{ github.repository }}]
-        uses: actions/checkout@v4
-
       - uses: cvxgrp/.github/actions/uv/coverage@v2.0.16
         with:
           source-folder: 'src/mosek_license'
           tests-folder: 'src/tests'
 
-      - name: Coveralls GitHub Action
-        uses: coverallsapp/github-action@648a8eb78e6d50909eff900e4ec85cab4524a45b
-        with:
-          files: artifacts/tests/coverage/coverage.info
-          format: lcov
-
   deptry:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout [${{ github.repository }}]
-        uses: actions/checkout@v4
-
       - uses: cvxgrp/.github/actions/uv/deptry@v2.0.16
         with:
-          source-folder: src/mosek_license
+          source-folder: 'src/mosek_license'
 
   pre-commit:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout [${{ github.repository }}]
-        uses: actions/checkout@v4
-
-      - uses: pre-commit/action@v3.0.1
-        with:
-          extra_args: '--verbose --all-files'
+      - uses: cvxgrp/.github/actions/uv/pre-commit@v2.0.16
