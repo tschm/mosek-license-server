@@ -13,7 +13,7 @@ jobs:
       - uses: cvxgrp/.github/actions/uv/deptry@v2.0.16
         with:
           source-folder: 'src/mosek_license'
-          
+
   pre-commit:
     runs-on: ubuntu-latest
     steps:
