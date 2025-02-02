@@ -11,6 +11,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - uses: cvxgrp/.github/actions/uv/environment@main
+
       - name: Generate Tag
         uses: cvxgrp/.github/actions/uv/tag@v2.0.17
         with:
