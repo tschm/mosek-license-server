@@ -14,11 +14,11 @@ jobs:
       # construct the environment, including uv, a venv, all dependencies
       - uses: cvxgrp/.github/actions/uv/environment@main
 
-      - uses: cvxgrp/.github/actions/uv/deptry@main
+      - uses: cvxgrp/.github/actions/deptry@main
         with:
           source-folder: 'src/mosek_license'
 
   pre-commit:
     runs-on: ubuntu-latest
     steps:
-      - uses: cvxgrp/.github/actions/uv/pre-commit@v2.0.17
+      - uses: cvxgrp/.github/actions/pre-commit@v2.0.17
