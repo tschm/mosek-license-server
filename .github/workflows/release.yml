@@ -11,7 +11,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: cvxgrp/.github/actions/uv/environment@main
+      - name: "Build the virtual environment for ${{ github.repository }}"
+        uses: cvxgrp/.github/actions/uv/environment@main
 
       - name: Generate Tag
         uses: cvxgrp/.github/actions/tag@v2.0.17
