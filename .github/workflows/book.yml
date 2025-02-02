@@ -10,14 +10,14 @@ jobs:
   pdoc:
     runs-on: "ubuntu-latest"
     steps:
-      - uses: cvxgrp/.github/actions/uv/pdoc@v2.0.16
+      - uses: cvxgrp/.github/actions/uv/pdoc@v2.0.17
         with:
           source-folder: 'src/mosek_license'
 
   test:
     runs-on: "ubuntu-latest"
     steps:
-      - uses: cvxgrp/.github/actions/uv/coverage@v2.0.16
+      - uses: cvxgrp/.github/actions/uv/coverage@v2.0.17
         with:
           source-folder: 'src/mosek_license'
           tests-folder: 'src/tests'
@@ -25,7 +25,7 @@ jobs:
   jupyter:
     runs-on: "ubuntu-latest"
     steps:
-      - uses: cvxgrp/.github/actions/uv/jupyter@v2.0.16
+      - uses: cvxgrp/.github/actions/uv/jupyter@v2.0.17
 
   book:
     runs-on: "ubuntu-latest"
