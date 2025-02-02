@@ -14,7 +14,7 @@ jobs:
       - uses: cvxgrp/.github/actions/uv/environment@main
 
       - name: Generate Tag
-        uses: cvxgrp/.github/actions/uv/tag@v2.0.17
+        uses: cvxgrp/.github/actions/tag@v2.0.17
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
 

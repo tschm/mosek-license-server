@@ -20,7 +20,7 @@ jobs:
     steps:
       - uses: cvxgrp/.github/actions/uv/environment@main
 
-      - uses: cvxgrp/.github/actions/uv/test@main
+      - uses: cvxgrp/.github/actions/test@main
         with:
           python-version: ${{ matrix.python-version }}
           tests-folder: 'src/tests'

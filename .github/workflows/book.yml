@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: cvxgrp/.github/actions/uv/environment@main
 
-      - uses: cvxgrp/.github/actions/uv/pdoc@main
+      - uses: cvxgrp/.github/actions/pdoc@main
         with:
           source-folder: 'src/mosek_license'
 
@@ -23,7 +23,7 @@ jobs:
     steps:
       - uses: cvxgrp/.github/actions/uv/environment@main
 
-      - uses: cvxgrp/.github/actions/uv/coverage@main
+      - uses: cvxgrp/.github/actions/coverage@main
         with:
           source-folder: 'src/mosek_license'
           tests-folder: 'src/tests'
@@ -34,7 +34,7 @@ jobs:
     steps:
       - uses: cvxgrp/.github/actions/uv/environment@main
 
-      - uses: cvxgrp/.github/actions/uv/jupyter@main
+      - uses: cvxgrp/.github/actions/jupyter@main
 
   book:
     runs-on: "ubuntu-latest"
