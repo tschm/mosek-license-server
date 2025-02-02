@@ -9,6 +9,7 @@ on:
 jobs:
   deptry:
     runs-on: ubuntu-latest
+
     steps:
       # construct the environment, including uv, a venv, all dependencies
       - uses: cvxgrp/.github/actions/uv/environment@main
