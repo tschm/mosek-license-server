@@ -9,7 +9,6 @@ permissions:
 jobs:
   pdoc:
     runs-on: "ubuntu-latest"
-
     steps:
       - uses: cvxgrp/.github/actions/uv/environment@main
 
@@ -19,7 +18,6 @@ jobs:
 
   test:
     runs-on: "ubuntu-latest"
-
     steps:
       - uses: cvxgrp/.github/actions/uv/environment@main
 
