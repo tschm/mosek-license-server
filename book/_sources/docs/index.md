@@ -95,11 +95,10 @@ Still lost? Please open an issue.
 
 ## uv
 
-You need to install [task](https://taskfile.dev).
 Starting with
 
 ```bash
-task mosek:install
+make install
 ```
 
 will install [uv](https://github.com/astral-sh/uv) and create
